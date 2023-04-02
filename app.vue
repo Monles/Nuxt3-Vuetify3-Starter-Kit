@@ -4,7 +4,7 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>Application</v-toolbar-title>
-      <v-switch class="d-flex justify-end mr-4" v-model="themeToggler"></v-switch>
+      <v-switch v-model="themeToggler" class="d-flex mr-4 justify-end"></v-switch>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" temporary>

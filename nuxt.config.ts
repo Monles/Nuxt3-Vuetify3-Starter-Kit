@@ -3,9 +3,17 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   vite: {},
-  css: ['vuetify/styles', '@mdi/font/css/materialdesignicons.min.css'],
+  css: ['vuetify/styles', '@/assets/css/tailwind.css', '@mdi/font/css/materialdesignicons.min.css'],
   build: {
     transpile: ['vuetify'],
   },
-  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss'],
+  postcss: {
+    plugins: {
+      'postcss-import': {},
+      'tailwindcss/nesting': {},
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 });
