@@ -1,0 +1,8 @@
+node_module
+dist
+.nuxt
+coverage
+lib/template
+
+*.css
+*.bat
